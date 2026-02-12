@@ -5,7 +5,9 @@ function AppNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand as={Link} to="/">MyApp</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+        <img id="logo" src="./images/logo1.png" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
