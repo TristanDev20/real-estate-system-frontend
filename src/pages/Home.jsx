@@ -1,6 +1,8 @@
 import banner from '../assets/images/background/banner.jpg';
 import FeaturedProjects from "../components/FeaturedProjects";
 import '../App.css';
+import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
 
 function Home() {
   return (
@@ -8,28 +10,18 @@ function Home() {
     <div
       className="home-banner"
       style={{
-        backgroundImage: `url(${banner})`,
-        backgroundSize: "cover",
-        backgroundPosition: "top",
-        backgroundRepeat: "no-repeat",
-        height: "100vh"
+        backgroundImage: `url(${banner})`
       }}
     >
-      <div
-        className="d-flex justify-content-center align-items-center"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%"
-        }}             
-      >
-      <h1 className="display-4 fw-bold text-white text-center">Home Page</h1>
-    </div>
+      <h1 className="display-4 fw-bold text-white text-center">
+        Find Your Dream Property
+      </h1>
   </div>
-
+  
     <FeaturedProjects />
+    <AboutSection />
+    <ContactSection />
+  
 
   </>
   );

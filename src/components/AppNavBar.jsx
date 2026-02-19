@@ -16,8 +16,12 @@ function AppNavbar() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/portal">Portals</Nav.Link>
-            <Nav.Link as={Link} to="/contacts">Contacts</Nav.Link>
+            <Nav.Link as={Link} to="/contacts">Contact Us</Nav.Link>
+            <NavDropdown title="Portals" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/buyer-login">Buyer Portal</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/employee-login">Employee Portal</NavDropdown.Item>
+            </NavDropdown>
+            
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/profile">Profile</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/settings">Settings</NavDropdown.Item>

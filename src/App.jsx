@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AppNavbar from './components/AppNavBar';
 import Projects from './components/FeaturedProjects';
 import Home from './pages/Home';
-import About from './pages/About';
-import Portals from './pages/Portals';
-import Contact from './pages/Contact';
+import EmployeeLogin from "./pages/EmployeeLogin";
+import BuyerLogin from "./pages/BuyerLogin";
+import EmployeeDashboard from './pages/EmployeeDashboard';
+import BuyerDashboard from './pages/BuyerDashboard';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portals" element={<Portals />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/employee-login" element={<EmployeeLogin />} />
+          <Route path="/buyer-login" element={<BuyerLogin />} />
+          <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
+          <Route path="/buyer-dashboard" element={<BuyerDashboard />} /> 
         </Routes>
     </Router>
   );

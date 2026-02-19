@@ -24,12 +24,33 @@ function FeaturedProjects() {
       location: "Manila",
       price: "₱7,200,000",
       image: card
+    },
+    {
+      id: 4,
+      title: "Primo Homes",
+      location: "Taytay",
+      price: "₱8,000,000",
+      image: card
+    },
+    {
+      id: 5,
+      title: "Green Homes",
+      location: "Cebu",
+      price: "₱8,500,000",
+      image: card
+    },
+    {
+      id: 6,
+      title: "Hacienda Laysica",
+      location: "Iloilo",
+      price: "₱9,500,000",
+      image: card
     }
   ];
 
   return (
     <section className="container my-5">
-      <h2 className="text-center mb-4">Featured Projects</h2>
+      <h2 className="text-center mb-5">Featured Projects</h2>
 
       <div className="row g-4">
         {projects.map((project) => (

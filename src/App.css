@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+
 }
 
 
@@ -11,14 +11,19 @@ html, body {
 
 
 .home-banner {
-  width: 100vw;
-  height: "80vh";
+  width: 100%;
+  height: calc(100vh - 56px);
+  margin-top: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 
 .home-banner h1 {
