@@ -1,8 +1,18 @@
+import TopNavbar from "../components/TopNavbar";
+import Sidebar from "../components/Sidebar";
+import { Outlet } from "react-router-dom";
+import "./Dashboard.css";
+
 function EmployeeDashboard() {
   return (
-    <div className="container py-5">
-      <h1>Employee Dashboard</h1>
-      <p>Manage properties, buyers, and sales.</p>
+    <div>
+      <TopNavbar />
+      <div className="dashboard-layout">
+        <Sidebar />
+        <div className="dashboard-content">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 }

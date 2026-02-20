@@ -1,3 +1,6 @@
+
+import image from '../assets/images/background/aboutsection.jpg';
+
 function AboutSection() {
   return (
     <section className="py-5 bg-light">
@@ -22,7 +25,7 @@ function AboutSection() {
 
           <div className="col-md-6">
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+              src={image}
               alt="Viridis Natura Community"
               className="img-fluid rounded shadow"
             />

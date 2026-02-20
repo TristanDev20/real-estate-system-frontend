@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import loginbackground from '../assets/images/background/loginbackground.png';
+import './Login.css';
 
 function EmployeeLogin() {
   const navigate = useNavigate();
@@ -6,33 +8,51 @@ function EmployeeLogin() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // TEMP login logic (we’ll improve later)
+
     navigate("/employee-dashboard");
   };
 
   return (
-    <div className="container py-5">
-      <h2 className="fw-bold mb-4 text-center">Employee Login</h2>
+  <div className="employee-login-container">
+    <div className="row g-0 h-100">
 
-      <form onSubmit={handleLogin} className="col-md-6 mx-auto">
-        <input
-          type="email"
-          className="form-control mb-3"
-          placeholder="Email"
-          required
+      
+      <div className="col-md-6 d-flex align-items-center justify-content-center login-form-side">
+        <div className="login-form-wrapper">
+          <h2 className="fw-bold mb-4 text-center">Employee Login</h2>
+
+          <form onSubmit={handleLogin}>
+            <input
+              type="email"
+              className="form-control mb-3"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              className="form-control mb-3"
+              placeholder="Password"
+              required
+            />
+            <button className="btn btn-success w-100">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+
+      
+      <div className="col-md-6 login-image-side">
+        <img
+          src={loginbackground}
+          alt="Viridis Natura Community"
+          className="employee-login-background"
         />
-        <input
-          type="password"
-          className="form-control mb-3"
-          placeholder="Password"
-          required
-        />
-        <button className="btn btn-success w-100">
-          Login
-        </button>
-      </form>
+      </div>
+
     </div>
-  );
+  </div>
+);
 }
 
 export default EmployeeLogin;

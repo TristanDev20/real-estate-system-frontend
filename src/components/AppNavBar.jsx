@@ -21,7 +21,6 @@ function AppNavbar() {
               <NavDropdown.Item as={Link} to="/buyer-login">Buyer Portal</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/employee-login">Employee Portal</NavDropdown.Item>
             </NavDropdown>
-            
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/profile">Profile</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/settings">Settings</NavDropdown.Item>
